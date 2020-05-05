@@ -42,6 +42,8 @@ Entre los string y los signos de comprobación tiene que haber un spacio, porque
 | -O    | si el usuario logueado es el dueño del archivo |
 | -c    | si el archivo es un "character divice"         |
 
+[Test-types](https://wiki.bash-hackers.org/commands/classictest)
+
 ## If statements
 Extructura básica en un "if" y elif
 
