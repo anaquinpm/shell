@@ -6,3 +6,4 @@ Resumen de shell Linux
 - [ConditionsAttached](master/03conditionsAttached.md)
 - [Code Snippets](master/04codeSnippets.md)
 - [Sintaxis alternativas](master/05syntax.md)
+- [Loops](master/06loops.md)
