@@ -7,3 +7,4 @@ Resumen de shell Linux
 - [Code Snippets](master/04codeSnippets.md)
 - [Sintaxis alternativas](master/05syntax.md)
 - [Loops](master/06loops.md)
+- [Funciones](master/07funtions.md)
