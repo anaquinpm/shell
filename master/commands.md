@@ -10,4 +10,5 @@ $ who 				# muestra quien está conectado al OS
 $ lsof -u "$USER" -a -c bash 	# lista archivos abiertos
 $ declare -F 		# Muestra solo las definiciones de las funciones 
 $ sed -i.bak '/^/s*#/d;/^$/d' <filename>	# comando que remueve lineas en blanco y comentarios de un archivo
+$ ifconfig -a | grep -i "RX packets"	# -i:case insensitive
 ```

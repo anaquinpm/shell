@@ -8,3 +8,4 @@ Resumen de shell Linux
 - [Sintaxis alternativas](master/05syntax.md)
 - [Loops](master/06loops.md)
 - [Funciones](master/07funtions.md)
+- [Stream Editor](master/08StreamEditor.md)
