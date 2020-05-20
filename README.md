@@ -10,3 +10,4 @@ Resumen de shell Linux
 - [Funciones](master/07funtions.md)
 - [Stream Editor](master/08StreamEditor.md)
 - [AWK](master/10awk.md)
+- [Regex](master/11regex.md)
