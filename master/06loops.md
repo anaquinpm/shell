@@ -49,7 +49,7 @@ Para ello vamos a usar:
 ## While and until loops
 Esta itera en razon de que una `condición` que sea **true** (sigue) o **false** (para).
 ```bash
-whil [] ; do
+while [] ; do
   statement1
   statement2
 done

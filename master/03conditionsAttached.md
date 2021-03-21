@@ -1,11 +1,12 @@
 # Conditions attached
-
 ## Test
 ```bash
 test -z $1			# -z: verifica si tiene 0 bytes
 [ -z $1 ]			# [ ]: es igual que usar la sentencia **test**
 [ -n $SSH_TTY ]		# -n: verifica si el strint tiene un valor
 ```
+
+[ejemplo](03hello4.sh)
 
 | string | Descripción                                                    |
 | ------ | -------------------------------------------------------------- |
@@ -17,22 +18,23 @@ test -z $1			# -z: verifica si tiene 0 bytes
 | \<     | string1 es menor al string2 desde la perspectiva ASCII (orden) |
 | \>     | string1 es mayor al string2                                    |
 
-Entre los string y los signos de comprobación tiene que haber un spacio, porque sino vamos a estar asignando una variable a la otra.
+Entre los strings y los signos de comprobación tiene que haber un spacio, porque sino vamos a estar asignando una variable a la otra.
 
-| integers | descripción     |
+| Integers | Descripción     |
 | -------- | --------------- |
 | -gt      | mayor que (>)   |
 | -ge      | mayor o igual   |
 | -le      | menor o igual   |
-| -lt      | menor que       |
+| -lt      | menor que (<)   |
 | -eq      | igual que       |
 | -ne      | no es igual que |
 
 
-| files | Descripción                                    |
+| Files | Descripción                                    |
 | ----- | ---------------------------------------------- |
 | -h    | tiene un link                                  |
 | -e    | existe en alguna forma                         |
+| -d    | existe el directorio                           |
 | -x    | si es ejecutable                               |
 | -f    | es un archivo regular                          |
 | -r    | si es legible                                  |
@@ -48,18 +50,18 @@ Entre los string y los signos de comprobación tiene que haber un spacio, porque
 Extructura básica en un "if" y elif
 
 ```bash
-if condition; them
+if condition; then
   statement 1
   statement 2
 elif
   statement 3
-else 
+else
   statement 4
 fi
 ```
-[Code](03ifStatement.sh)
 
 [Ejemplo1](03ifStatement.sh)
+
 [Ejemplo2](03elif.sh)
 
 ## Case Statement

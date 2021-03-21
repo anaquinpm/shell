@@ -3,14 +3,17 @@
 # Comentario del programa
 # Author: Pablo Anaquin
 # Date: 26-05-2020
+# use: ./script
 echo -n "Hello $(basename $0)! Como te llamas: "
 read
 echo "Hello $REPLY"
 exit 0
 ```
+
 `$REPLY` es la variable por defecto a la que devuelve el read, ya que no determinamos una variable para la misma.
 
 Los comentarios en el archivo nos permiten determinar lo que hace el script y porque. Es una guía para quien quiera editar el archivo.
+
 ```bash
 #!/bin/bash
 read -p "Hello $(basename $0)! Como te llamas: " name   #read -p <prompt> <variable name>
@@ -22,9 +25,11 @@ exit 0
 
 ## Pasando opciones
 Las opciones que pasamos con nuestro script pueden tener la siguiente forma:
+
 > $ script1.sh -a -b 20 -c
 
-Esta forma de pasar opciones implica que tenes que parsear los datos para saber cual son opciones y cuales son argumentos de las mismas. Para ello vamos a usar sentencias condicionales, para mantenerlo simple.
+Esta forma de pasar opciones implica tener que parsear los datos para saber cual son opciones y cuales son argumentos de las mismas. Para ello vamos a usar sentencias condicionales, para mantenerlo simple.
+
 ```bash
 #!/bin/bash
 while [ -n "$1" ]
@@ -42,16 +47,18 @@ done
 
 ### Pasando opciones con parametros
 Para pasar parametros y luego sus respectivos valor podemos usar "--"
+
 > $ script.sh -a -b -c -- p1 p2 p3
+
 ```bash
 #!/bin/bash
-while [ -n "$1" ]
+while [ -n "$1" ]       # '-n' -> el string es mayor a cero
 do
 case "$1" in
   -a) echo "-a opción usada" ;;
   -b) echo "-b opción usada" ;;
   -c) echo "-c opción usada" ;;
-  --) shift 
+  --) shift
   break ;;
   *) echo "opción $1 no es una opción" ;;
 esac
@@ -69,6 +76,7 @@ done
 [code](02options2.sh)
 
 ### Leyendo valores de las opciones
+
 ```bash
 #!/bin/bash
 while [ -n "$1" ]
@@ -93,8 +101,8 @@ do
 done
 ```
 
-La función nos permite `getopt` optener las opciones de los usuarios, pero solo si son de un caracter. 
-- [ ] **BUSCAR uso de getopt** 
+La función `getopt` nos permite optener las opciones de los usuarios, pero solo si son de un caracter.
+- [ ] **BUSCAR uso de getopt**
   - [ ] [web](http://www.manpagez.com/man/1/getopt/)
   - [ ] [web2](https://ss64.com/bash/getopts.html)
 

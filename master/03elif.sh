@@ -4,7 +4,9 @@
 # Date: 05-02-2020
 # use: ./03elif.sh
 
-read -p "Elegir tipo de compresion de archivo: H, M o L" file_compression
+read -p "Elegir tipo de compresion de archivo: H, M o L" compression
+# Aseguramos que este en mayúscula la repuesta
+file_compression=${compression^^}
 read -p "En que directorio quieres comprimir $HOME?" dir_name
 if [ -z $dir_name ]; then
   echo "Debe ingresar un nombre de directorio."

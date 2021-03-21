@@ -1,5 +1,10 @@
 #!/bin/bash
-# $1 es un arch que nos da las IPs de servers para hacer ping
+# Verificar servidores activos, según IPs indicadas en un archivo
+#
+# Author: Pablo Martín Anaquín (@anaquinpm)
+# Date: dd-mm-aaaa
+# Use:
+#       ./06servers.sh servers.txt
 
 if [ ! -f "$1" ]; then
   echo "La entrada de $0 debe ser un archivo"

@@ -17,7 +17,7 @@ $ awk ' { print } ' /etc/passwd			# Muestra todo el contenido del archivo
 $ awk ' { print $1 } ' /etc/passwd			# Muestra el primer campo de lineas del archivo
 ```
 
-En el ultimo comando, la variable $1 es la que indica que campo va a mostrar.
+En el último comando, la variable $1 es la que indica que campo va a mostrar.
 
 - Variable
   - $0: Muestra la linea completa
@@ -48,8 +48,8 @@ Podemos usar expresiones regulares (regex) entre barras, para machear en las lin
 | ORS              | Especifica el "output separator"                                |
 | FILENAME         | Indica el nombre del archivo procesado                          |
 | NF               | Indica la linea que se está procesando                          |
-| NR			   | Indica la cantidad de lineas procesadas durante todo el comando |
-| FNR              | Indica la cantidad de lineas procesadas en cada archivo/entrada |
+| NR               | Indica la cantidad  de campos procesador en la linea            |
+| FNR              | Indica la cantidad de líneas procesadas en cada archivo/entrada |
 | IGNORECASE       | Ignora mayusculas y minusculas                                  |
 
 > $ awk ' BEGIN { FS="\n" ; RS="" ; OFS=" - " } { print $1, $3 }' agenda
