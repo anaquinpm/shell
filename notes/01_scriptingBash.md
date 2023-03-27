@@ -24,7 +24,7 @@ Podemos relizarlo de 2 maneras.
 - Ejecutando el comando "bash namescript.sh"
 - `Dando permisos de ejecución` y ejecutando directamente el script: "chmod +x namescript.sh" -> "./namescript.sh"
 
-Probamos con el [siguiente archivo](01hello.sh)
+Probamos con el [siguiente archivo](master/01hello.sh)
 
 ```Bash
 #!/bin/bash
@@ -76,7 +76,7 @@ echo "Hello $1"
 exit 0
 ```
 
-[Code](01hello2.sh)
+[Code](master/01hello2.sh)
 
 > $ 01hello2.sh Pablo
 

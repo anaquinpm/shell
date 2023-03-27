@@ -23,7 +23,7 @@ if (grep "$REPLY" /etc/passwd > /dev/null) ; then
 fi
 ```
 
-[EJ: Existencia del usuario](ch08/user.sh)
+[EJ: Existencia del usuario](master/ch08/user.sh)
 
 Recordar que el if está usando "()" porque no tiene que relizar un [] (test) sobrel grep. Grep retorna 0 cuando hay coincidencia, 1 para lo contrario y 2 para erres de sintaxis en expresiones. Se puede cambiar el sentido de 0,1 con la opción -v.
 

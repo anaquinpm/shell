@@ -18,13 +18,13 @@ for f in 01* in ; do    # Escribirlo directamente en la terminal
 done
 ```
 
-[Ej: Mostrar archivos abiertos por los usarios en bash](06hello7.sh)
+[Ej: Mostrar archivos abiertos por los usarios en bash](master/06hello7.sh)
 
 La lista sobre la que itera, algún elemento puede contener espacios. Para lograr que mantengan sus espacios y leer bien el elemento deberemos utilizar doble comillas ("elemento con espacios").
 
 ### IFS variables (space, newline, tab)
 
-Es la forma que por defecto bash toma los `separadores` para ingresar sus campos de variables. Para cambiar este comportamiento que vemos en [06IFS.sh](06IFS.sh) vamos modificar el IPS.
+Es la forma que por defecto bash toma los `separadores` para ingresar sus campos de variables. Para cambiar este comportamiento que vemos en [06IFS.sh](master/06IFS.sh) vamos modificar el IPS.
 
 ```bash
 #!/bin/bash
@@ -36,7 +36,7 @@ echo " $var"
 done
 ```
 
-[Cambiando IFS a '\n'](06IFS2.sh)
+[Cambiando IFS a '\n'](master/06IFS2.sh)
 
 `Bash` por defecto no interpreta los caracteres con escape(\n, \r, \t). Por lo que en este ejemplo para lograr la interpretación de salto de linea usamos el `signo dolar ($)` antes de hacer que funcione adecuadamente.
 
@@ -44,11 +44,11 @@ Si queremos usar un caracter normal para IFS no es necesario `$`.
 
 ### Comprobando Directorios y archivos
 
-[Ejemplo](06fileDirectories.sh)
+[Ejemplo](master/06fileDirectories.sh)
 
 ### C-Style for loops
 
-[C-Style code](06cstyle.sh)
+[C-Style code](master/06cstyle.sh)
 
 ### Controlando el loop
 
@@ -89,4 +89,4 @@ while read server ; do
 echo "Los siguientes servers stan UP: $servers_up"
 ```
 
-[Ejemplo más completo](06servers.sh)
+[Ejemplo más completo](master/06servers.sh)

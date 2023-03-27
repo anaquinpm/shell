@@ -24,7 +24,7 @@ read -sn1 -p "Presione una tecla para salir"   # -n<number> indica la cantidad d
 exit 0
 ```
 
-[code](02hello4.sh)
+[code](master/02hello4.sh)
 
 ## Pasando opciones
 
@@ -48,7 +48,7 @@ do
 done
 ```
 
-[code](02options.sh)
+[code](master/02options.sh)
 
 ### Pasando opciones con parametros
 
@@ -80,7 +80,7 @@ num=$(($num+1))
 done
 ```
 
-[code](02options2.sh)
+[code](master/02options2.sh)
 
 ### Leyendo valores de las opciones
 

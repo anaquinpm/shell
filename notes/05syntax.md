@@ -22,7 +22,7 @@ ${parametro-default}    ## Pseudocódigo
 ${parametro:-default}   ## :- es usado cuando el parametro es explicitamente declarado con un valor nulo
 ```
 
-Este [Ejemplo](05hello.sh)
+Este [Ejemplo](master/05hello.sh)
 
 ```bash
 #!/bin/bash
@@ -108,4 +108,4 @@ NUMB=$(( 25-10 ))
 echo $NUMB
 ```
 
-[Code](05syntax.sh)
+[Code](master/05syntax.sh)

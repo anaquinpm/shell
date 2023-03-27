@@ -8,7 +8,7 @@ test -z $1      # -z: verifica si tiene 0 bytes
 [ -n $SSH_TTY ] # -n: verifica si el strint tiene un valor
 ```
 
-[ejemplo](03hello4.sh)
+[ejemplo](master/03hello4.sh)
 
 | string | Descripción                                                    |
 | ------ | -------------------------------------------------------------- |
@@ -62,9 +62,9 @@ else
 fi
 ```
 
-[Ejemplo1](03ifStatement.sh)
+[Ejemplo1](master/03ifStatement.sh)
 
-[Ejemplo2](03elif.sh)
+[Ejemplo2](master/03elif.sh)
 
 ## Case Statement
 
@@ -87,7 +87,7 @@ case expression in
 esac
 ```
 
-[Ejemplo](03grade.sh)
+[Ejemplo](master/03grade.sh)
 
 ### Usando lo visto
 
@@ -120,4 +120,4 @@ echo $mesg
 grep $opt $2 $1
 ```
 
-[Code](03search.sh)
+[Code](master/03search.sh)
