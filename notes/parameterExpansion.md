@@ -13,8 +13,8 @@ ${var,pattern}    # Lowercase first matching optional pattern
 ${var,,pattern}   # Lowercase all matching optional pattern
 ${var:offset}     # Substring starting at +offset+
 ${var:offset:length}    # Substring starting at +offset+ for +length+
-${var:-default}   # Var if set, otherwise +default+
-${var:-default}   # Assign +default+ to +var+ if +var+ not ready set
+${var-default}   # Var if set, otherwise +default+
+${var:-default}   # Assign +default+ to +var+ if +var+ not ready set or null
 ${var:?error_message}   # Barf with +error_message+ if +var+ not set
 ${var:+replaced}  # Expand to +replaced+ if +var+ _is_ set
 ${#var}       # Length of var
