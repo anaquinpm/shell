@@ -152,3 +152,11 @@ Podemos filtrar usuarios segun su UID.
 - Miscellaneous functions
 
 > $ awk 'BEGIN { x = "Hola Mundo"; print toupper(x) } '
+
+## Examples
+
+```bash 
+awk '( $4 ~ /10\/Sep\/2014/ && $9=="404") { print $0; COUNT++} END { print "Contador", COUNT}' access.log
+awk -F: '$1 == "anakin"' /etc/passwd
+dpkg -l | awk '(/^ii/ && $2 ~ /linux-image/) {print $0}'
+```
