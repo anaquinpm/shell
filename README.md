@@ -24,6 +24,5 @@ A structured collection of Bash scripting notes, examples, and hands-on projects
 
 | Project | Description |
 |---|---|
-| [Bash Idioms](hands-on/bash_idioms/) | Examples from the Bash Idioms book |
-| [Sandbox](hands-on/_sandbox/) | Scratchpad for quick testing |
 | [Standalone Scripts](hands-on/) | Collection of standalone shell scripts |
+| [Sandbox](hands-on/_sandbox/) | Scratchpad for quick testing |
