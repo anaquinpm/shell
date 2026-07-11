@@ -1,2 +1,0 @@
-Este es un nuevo texto para poder hacer pruebas mediante linea de comandos.
-Podemos agregar más renglones a media que procesamos todo el texto.

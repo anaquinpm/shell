@@ -1,0 +1,16 @@
+# Shell/Bash artifacts
+*.out
+*.log
+*.bak
+
+# Data files
+access.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+# OS
+.DS_Store
+Thumbs.db
